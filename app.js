@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
 const Joi = require('@hapi/joi');
-const movies = require('./movies');
+const movies = require('./users');
 
 app.use(express.json());
 
-app.use('/abc', movies);
+app.use('/abc', users);
 
 
 app.get('/', (req,res) => {
-    res.send('Welcome to Daily Code Buffer in Heroku Auto Deployment!!');
+    res.send('You are almost there!');
 })
 
 
