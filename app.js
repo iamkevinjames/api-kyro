@@ -2,12 +2,12 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const Joi = require('@hapi/joi');
-const movies = require('./users');
+const userData = require('./users');
 
 app.use(cors());
 app.use(express.json());
 
-app.use('/user', movies);
+app.use('/user', userData);
 
 
 app.get('/', (req,res) => {
