@@ -19,9 +19,5 @@ route.post("/postData", (req, res) => {
   res.send("User Data updated successfully!");
 });
 
-route.use('/api/user',(req,res,next) => {
-    console.log(req.url, req.method)
-    next();
-})
 
 module.exports = route;
