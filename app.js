@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const Joi = require('@hapi/joi');
-const movies = require('./users');
+const users = require('./users');
 
 app.use(express.json());
 
